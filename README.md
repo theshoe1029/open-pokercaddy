@@ -13,5 +13,5 @@ Poker Caddy is a simple poker bankroll manager. It has a Spring Boot backend, a 
 3. (optional) To deploy to ec2 add ```server.port=80``` to application.properties and use ```sudo ./mvnw spring-boot:run``` to run the application
 
 ## Running React Application
-1. The first time you run the react application, use ```npm install`` to install the necessary dependencies
+1. The first time you run the react application, use ```npm install``` to install the necessary dependencies
 2. Use ```npm run-script watch``` to start the react application, the react frontend will automatically update on changes
