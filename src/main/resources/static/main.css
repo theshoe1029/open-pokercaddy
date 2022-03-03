@@ -1,0 +1,285 @@
+body {
+    font-size: 12px;
+    background-image: url('/marble-background.jpg');
+}
+
+.user-container {
+    margin: auto;
+    max-width: 500px;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 35%;
+    margin-bottom: 5%;
+}
+
+@keyframes focusPlaceholder {
+    from {font-size: 3rem;}
+    to {font-size: 1rem;}
+}
+
+@keyframes unFocusPlaceholder {
+    from {font-size: 1rem;}
+    to {font-size: 3rem;}
+}
+
+.floating-input {
+    color: #bababa;
+    font-family: 'Playfair Display', serif;
+}
+
+.floating-input-placeholder {
+    animation-name: unFocusPlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.floating-input-placeholder:hover {
+    cursor: text;
+}
+
+.placeholder-selected {
+    animation-name: focusPlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hidden-input-field {
+    display: none;
+}
+
+.floating-input-field {
+    font-size: 3rem;
+    color: #bababa;
+    border-style: none;
+    display: block;
+}
+
+.floating-input-field:focus {
+    outline: none;
+}
+
+.bankroll-input-field {
+    font-size: 3rem;
+    color: #bababa;
+    border-style: none;
+    display: inline-block;
+}
+
+.bankroll-input-field:focus {
+    outline: none;
+}
+
+.user-button {
+    font-size: 0.9rem;
+    background-color: black;
+    color: #bababa;
+    padding: 0;
+}
+
+.user-button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.user-buttons {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#bankroll {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#starting-bankroll {
+    margin-right: 24px;
+}
+
+.etched-text {
+    font-family: 'Playfair Display', serif;
+    color: transparent;
+    background: black;
+    -webkit-background-clip: text;
+    text-shadow: 1px 2px 2px
+    rgba(255, 255, 255, 0.5);
+}
+
+.cash-input {
+    max-width: 7rem;
+}
+
+.cash-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 0.75rem;
+}
+.cash-input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 0.75rem;
+}
+.cash-input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 0.75rem;
+}
+.cash-input:-moz-placeholder { /* Firefox 18- */
+    font-size: 0.75rem;
+}
+
+.win-color {
+    color: green;
+}
+
+.loss-color {
+    color: red;
+}
+
+.cash-col {
+    text-align: center;
+}
+
+.etch-success-color {
+    color: transparent;
+    background: green;
+    -webkit-background-clip: text;
+    text-shadow: 1px 2px 2px
+    rgba(255, 255, 255, 0.5);
+}
+
+.etch-error-color {
+    color: transparent;
+    background: red;
+    -webkit-background-clip: text;
+    text-shadow: 1px 2px 2px
+    rgba(255, 255, 255, 0.5);
+}
+
+#sessions-table-wrapper {
+    max-height: 625px;
+    overflow: auto;
+}
+
+#stats {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 3%;
+}
+
+.small-text {
+    font-size: 0.75rem;
+}
+
+.log-out-button {
+    margin: auto;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #dc3545;
+    padding: 0;
+}
+
+.log-out-button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#add-session-button {
+    margin: auto;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.pointer-cursor:hover {
+    cursor: pointer;
+}
+
+.btn-col {
+    width: 50px;
+}
+
+.alert-message {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#alert-success {
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    opacity: 1;
+}
+
+#alert-error {
+    opacity: 1 !important;
+}
+
+#bankroll-label {
+    padding-right: 0;
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    #logo {
+        margin-top: 25%;
+    }
+
+    .user-container {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .floating-input-field {
+        max-width: 300px;
+        font-size: 2rem;
+    }
+
+    #bankroll {
+        font-size: 1.25rem;
+    }
+
+    #starting-bankroll {
+        margin-right: 8px;
+    }
+
+    #starting-bankroll-wrapper {
+        text-align: center;
+    }
+
+    #stats {
+        font-size: 1.25rem;
+    }
+
+    .floating-input-placeholder {
+        font-size: 1.5rem !important;
+    }
+
+    .bankroll-input-field {
+        margin-left: 8px;
+    }
+
+    #bankroll-input {
+        font-size: 1.5rem !important;
+    }
+
+    .form-control {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+    }
+
+    .add-session-buttons {
+        text-align: center;
+    }
+
+    .add-session-buttons button {
+        margin-left: 12px;
+    }
+
+    .cash-input {
+        max-width: none;
+    }
+}
